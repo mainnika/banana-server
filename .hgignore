@@ -1,0 +1,10 @@
+syntax: glob
+*.log
+*.dll
+build/
+logs/
+nbproject/*.bash
+nbproject/*.mk
+nbproject/private/
+dist/
+.dep.inc

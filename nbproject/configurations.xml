@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="95">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <logicalFolder name="f3" displayName="Packets" projectFiles="true">
+      <logicalFolder name="impl" displayName="impl" projectFiles="true">
+        <itemPath>packets/impl/packets.pb.cc</itemPath>
+        <itemPath>packets/impl/packets.pb.h</itemPath>
+      </logicalFolder>
+      <itemPath>packets/packets.proto</itemPath>
+    </logicalFolder>
+    <logicalFolder name="f1" displayName="Server" projectFiles="true">
+      <itemPath>server/Client.cpp</itemPath>
+      <itemPath>server/Client.h</itemPath>
+      <itemPath>server/Clients.cpp</itemPath>
+      <itemPath>server/Clients.h</itemPath>
+      <itemPath>server/Config.h</itemPath>
+      <itemPath>server/NoCopy.h</itemPath>
+      <itemPath>server/Protocol.cpp</itemPath>
+      <itemPath>server/Protocol.h</itemPath>
+      <itemPath>server/Server.cpp</itemPath>
+      <itemPath>server/Server.h</itemPath>
+      <itemPath>server/TcpClient.cpp</itemPath>
+      <itemPath>server/TcpClient.h</itemPath>
+      <itemPath>server/TcpServer.cpp</itemPath>
+      <itemPath>server/TcpServer.h</itemPath>
+      <itemPath>server/Thread.cpp</itemPath>
+      <itemPath>server/Thread.h</itemPath>
+    </logicalFolder>
+    <logicalFolder name="SourceFiles" displayName="Source" projectFiles="true">
+      <itemPath>main.cpp</itemPath>
+    </logicalFolder>
+    <logicalFolder name="f2" displayName="Tools" projectFiles="true">
+      <itemPath>tools/alloc_buffer.cpp</itemPath>
+      <itemPath>tools/alloc_buffer.h</itemPath>
+      <itemPath>tools/array_deleter.h</itemPath>
+      <itemPath>tools/easylogging++.h</itemPath>
+      <itemPath>tools/free_deleter.h</itemPath>
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>Makefile</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <sourceRootList>
+    <Elem>packets/impl</Elem>
+  </sourceRootList>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Debug_Linux" type="1">
+      <toolsSet>
+        <compilerSet>GNU|GNU</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <ccTool>
+          <architecture>2</architecture>
+          <standard>8</standard>
+          <incDir>
+            <pElem>.</pElem>
+            <pElem>server</pElem>
+            <pElem>tools</pElem>
+          </incDir>
+          <commandLine>-fsanitize=address -fno-omit-frame-pointer</commandLine>
+        </ccTool>
+        <linkerTool>
+          <linkerLibItems>
+            <linkerLibLibItem>tbb</linkerLibLibItem>
+            <linkerLibLibItem>uv</linkerLibLibItem>
+            <linkerLibLibItem>protobuf</linkerLibLibItem>
+          </linkerLibItems>
+          <commandLine>-fsanitize=address</commandLine>
+        </linkerTool>
+      </compileType>
+      <item path="main.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="packets/impl/packets.pb.cc" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="packets/impl/packets.pb.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="packets/packets.proto" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="server/Client.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="server/Client.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="server/Clients.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="server/Clients.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="server/Config.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="server/NoCopy.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="server/Protocol.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="server/Protocol.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="server/Server.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="server/Server.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="server/TcpClient.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="server/TcpClient.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="server/TcpServer.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="server/TcpServer.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="server/Thread.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="server/Thread.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="tools/alloc_buffer.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="tools/alloc_buffer.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="tools/array_deleter.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="tools/easylogging++.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="tools/free_deleter.h" ex="false" tool="3" flavor2="0">
+      </item>
+    </conf>
+    <conf name="Debug_Windows" type="1">
+      <toolsSet>
+        <compilerSet>MinGW|MinGW</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <ccTool>
+          <architecture>2</architecture>
+          <standard>8</standard>
+          <incDir>
+            <pElem>.</pElem>
+            <pElem>server</pElem>
+            <pElem>tools</pElem>
+            <pElem>C:/mingw64/build/tbb43_20150424oss/include</pElem>
+            <pElem>C:/mingw64/builded/libuv/include</pElem>
+            <pElem>C:/mingw64/builded/protobuf/include</pElem>
+          </incDir>
+          <commandLine>-O0</commandLine>
+          <warningLevel>3</warningLevel>
+        </ccTool>
+        <linkerTool>
+          <linkerAddLib>
+            <pElem>C:/mingw64/builded/libuv/lib</pElem>
+            <pElem>C:/mingw64/builded/protobuf/lib</pElem>
+            <pElem>C:/mingw64/builded/tbb_release</pElem>
+          </linkerAddLib>
+          <linkerLibItems>
+            <linkerLibLibItem>tbb</linkerLibLibItem>
+            <linkerLibLibItem>uv</linkerLibLibItem>
+            <linkerLibLibItem>protobuf</linkerLibLibItem>
+          </linkerLibItems>
+        </linkerTool>
+      </compileType>
+      <item path="main.cpp" ex="false" tool="1" flavor2="8">
+      </item>
+      <item path="packets/impl/packets.pb.cc" ex="false" tool="1" flavor2="8">
+      </item>
+      <item path="packets/impl/packets.pb.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="packets/packets.proto" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="server/Client.cpp" ex="false" tool="1" flavor2="8">
+      </item>
+      <item path="server/Client.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="server/Clients.cpp" ex="false" tool="1" flavor2="8">
+      </item>
+      <item path="server/Clients.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="server/Config.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="server/NoCopy.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="server/Protocol.cpp" ex="false" tool="1" flavor2="8">
+      </item>
+      <item path="server/Protocol.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="server/Server.cpp" ex="false" tool="1" flavor2="8">
+      </item>
+      <item path="server/Server.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="server/TcpClient.cpp" ex="false" tool="1" flavor2="8">
+      </item>
+      <item path="server/TcpClient.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="server/TcpServer.cpp" ex="false" tool="1" flavor2="8">
+      </item>
+      <item path="server/TcpServer.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="server/Thread.cpp" ex="false" tool="1" flavor2="8">
+      </item>
+      <item path="server/Thread.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="tools/alloc_buffer.cpp" ex="false" tool="1" flavor2="8">
+      </item>
+      <item path="tools/alloc_buffer.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="tools/array_deleter.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="tools/easylogging++.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="tools/free_deleter.h" ex="false" tool="3" flavor2="0">
+      </item>
+    </conf>
+  </confs>
+</configurationDescriptor>

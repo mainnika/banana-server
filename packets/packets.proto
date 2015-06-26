@@ -1,0 +1,21 @@
+package packets;
+
+enum ID {
+	INVALID = 0;
+	HELLO = 1;
+	LOGIN = 2;
+}
+
+message Packet {
+	required ID id = 1;
+}
+
+message Hello {
+	optional ID id = 1 [default = HELLO];
+}
+
+message Login {
+	optional ID id = 1 [default = LOGIN];
+	required string net_id = 2;
+	required string auth_key = 3;
+}
